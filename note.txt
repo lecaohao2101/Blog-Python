@@ -1,0 +1,18 @@
+#de tao django: django-admin startproject + ten project
+# manage.py: dùng để tương tác command, tạo tk admin, tạo DB, tạo sver ảo
+# __init__.py: biến forder thành packet
+# asgi.py:
+# settings.py: chỉnh sửa cấu hình project như: DB(chỉ support: sqllite, ,
+#urls.py: tạo ra các đường dânx của mình để liên kết các page lại với nhau
+# wsgi.py: để deploy project lên server
+# chạy: python3 + manage.py + runserver + tên cổng muốn đổi(cố định là 8000)
+--------------------------------------------------------------------------------
+#tạo web app: python3 manage.py startapp + tên webapp
+    # sau khi tạo thì vài file settings -> INSTALLED_APPS để thêm app vừa tạo -> 'tên app'
+    # sau khi thêm thì cập nhật settings: python3 manage.py migrate
+#client(may nguoi dung) ----HTTP request----> Web service server ----HTTP response ----> client(may nguoi dung)
+#from django.test import TestCase, SimpleTestCase: SimpleTestCase: dung de test
+# python3 manage.py test + name webapp: de test duong dan chay dung hay chua
+#
+
+
