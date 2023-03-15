@@ -13,6 +13,6 @@
 #client(may nguoi dung) ----HTTP request----> Web service server ----HTTP response ----> client(may nguoi dung)
 #from django.test import TestCase, SimpleTestCase: SimpleTestCase: dung de test
 # python3 manage.py test + name webapp: de test duong dan chay dung hay chua
-#
+#base laf khung
 
 
