@@ -8,7 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" href = "{% static 'css/bootstrap.main.css' %}" type ="text/css" >
     <title>{% block title %}{% endblock%}</title>
+    <style>
+        html, body{
+        height: 100%
+        background-color: #f6f6f6
+        }
+    </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class = "row">
@@ -19,14 +26,37 @@
             </div>
             <div class="col-sm-10">
                 <center>
-                    <h1>Blog lam tu python</h1>
+                    <h1>My Blog</h1>
                 </center>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="bs-sliderbar" style="background-color: #fff">
+                    <ul class="nav flex-cloumn">
+                        <li><a href="">Personal information</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="comtainer-fluid">
+                    {% block content %}
+
+
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
     </div>
-    {% block content %}
-
-
-    {% endblock %}
+<footer>
+    <div class="container-fluid">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Google</a>
+    </div>
+</footer>
 </body>
 </html>

@@ -9,3 +9,10 @@ def index(request):
     # response.writelines("<h1>Xin Chao</h1>")
     # response.write("This is app home")
     return render(request, 'pages/home.html')
+
+# def infomation(request):
+#     return render(request, 'page/information.html')
+def contact(request):
+    return render(request, 'pages/contact.html')
+def blog(request):
+    return render(request, 'pages/blog.html')
