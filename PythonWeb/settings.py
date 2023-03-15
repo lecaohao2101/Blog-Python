@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,15 @@ TEMPLATES = [
         },
     },
 ]
+
+# STATICFILES_FINDERS = [
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# ]
+#
+# STATICFILES_DIRS = [
+#     '/path/to/your/static/files/',
+# ]
 
 WSGI_APPLICATION = 'PythonWeb.wsgi.application'
 

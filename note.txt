@@ -14,5 +14,13 @@
 #from django.test import TestCase, SimpleTestCase: SimpleTestCase: dung de test
 # python3 manage.py test + name webapp: de test duong dan chay dung hay chua
 #base laf khung
+# tao home.html. dùng {% extends "pages/base.html" %} để liên kết base sang
+#tạo 1 folder trong apphome tên là static. Download bostrap về và đưa folder css và js của bostrap vào folder static
+# vào base setup để có thể sd bostrap bằng cách:
+    # {% load staticfiles %}
+    # <link rel ="stylesheet" href = "{% static(nơi lưu file bóotrap) 'css/bootstrap.min.css' %}" type = "text.css">
+#phan body: <div class="container-fluid"></div>: làm căn chỉnh tạo ra khoảng đệm trong khoảng thẻ div.
+# màn hình được chia làm 12 vùng
+#class="response-img": dùng để khi thu nhỏ màn hình thì ảnh cũng sẽ được thu nhỏ
 
 
