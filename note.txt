@@ -22,5 +22,6 @@
 #phan body: <div class="container-fluid"></div>: làm căn chỉnh tạo ra khoảng đệm trong khoảng thẻ div.
 # màn hình được chia làm 12 vùng
 #class="response-img": dùng để khi thu nhỏ màn hình thì ảnh cũng sẽ được thu nhỏ
+#python manage.py migrate : dùng để cập nhật cơ sở dữ liệu sqllite
 
 
