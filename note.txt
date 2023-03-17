@@ -23,5 +23,10 @@
 # màn hình được chia làm 12 vùng
 #class="response-img": dùng để khi thu nhỏ màn hình thì ảnh cũng sẽ được thu nhỏ
 #python manage.py migrate : dùng để cập nhật cơ sở dữ liệu sqllite
-
-
+# Tuong tac voi DB: python manage.py shell
+    # from blog(nameapp).models import Post(def in models)
+    #Phuong thuc khoi tao: a = Post() (def in models)
+    #a.title = 'First Title'
+    #a.body = 'Hello World'
+    #save data: a.save()
+    #Truy vn data: Post.objects.all()
