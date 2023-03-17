@@ -30,3 +30,12 @@
     #a.body = 'Hello World'
     #save data: a.save()
     #Truy vn data: Post.objects.all()
+    #Khoi tao: b = Post.(title = 'secondary Post', body = 'hello')
+#He thong admin: python manage.py createsuperuser
+    #quanly data: from .models import Post(def in model)
+    #create class: class PostAdmin(admin.ModelAdmin):
+#         list_display = ['title', 'date']
+#         list_filter = ['date']
+#         search_fields = ['title']
+    #admin.site.register(Post, )
+
