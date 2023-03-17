@@ -4,9 +4,8 @@ from . import views
 
 # luu cac duong dan path
 urlpatterns = [
-    path('', views.index),
-    # path('information', views.infomation),
+    path('', views.home),
     path('contact/', views.contact),
-    path('blog/', views.blog)
+
 
 ]

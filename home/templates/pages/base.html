@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel = "stylesheet" href = "{% static 'css/bootstrap.main.css' %}" type ="text/css" >
     <title>{% block title %}{% endblock%}</title>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
     <style>
         html, body{
         height: 100%
@@ -31,14 +34,14 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-sm-2">
-                <div class="bs-sliderbar" style="background-color: #fff">
-                    <ul class="nav flex-cloumn">
-                        <li><a href="">Personal information</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
+        <div class="row" class="bg-success p-2 text-white">
+            <div class="col-sm-2" class="bg-success p-2 text-white">
+                <div class="bs-sliderbar">
+                    <nav class="nav flex-cloumn">
+                        <a class="nav-link" href="/">Information</a>
+                        <a class="nav-link" href="/blog">Blog</a>
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </nav>
                 </div>
             </div>
             <div class="col-sm-10">
