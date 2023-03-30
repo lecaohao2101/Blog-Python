@@ -11,9 +11,15 @@ def home(request):
     return render(request, 'pages/home.html')
 
 
-
-
 def contact(request):
     return render(request, 'pages/contact.html')
+
+
 # def blog(request):
 #     return render(request, 'pages/blog.html')
+
+def error(request, exception):
+    return render(request, 'pages/error.html')
+
+def error(request):
+    return render(request, 'pages/error.html')
